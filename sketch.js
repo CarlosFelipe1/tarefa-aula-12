@@ -35,57 +35,19 @@ function draw() {
   rabbit.collide(edges);
   
    drawSprites();
-   
-  
-var apple = Math(random(1,3));
-
-var orangeL = Math.random(random(1,3));
-
-// var select_sprites = Math.round(1,3);
-
-var redL = Math.round(random(1,3));
+ 
+var frutas = Math.round(random(1,3));
 
   
    if (frameCount % 50 == 0) {
-     if (apple == 1) {
+     if (frutas == 1) {
        createApples();
-     } else if (redL == 2) {
+     } else if (frutas == 2) {
        createOrange();
      }else {
        createRed();
      }
    }
-
-   if (frameCount % 80 == 0) {
-     if (orangeL == 1) {
-       createApples();
-     } else if (apple == 2) {
-       createOrange();
-     }
-   }
-
-  // if (frameCount / 80 == 0) {
-  //   if (select_sprites == 1) {
-  //     createApples();
-  //   } else if (select_sprites == 2) {
-  //     createOrange();
-  //   }else {
-  //     createRed();
-  //   }
-  // }
-
-   if (frameCount % 80 == 0) {
-     if (apple == 1) {
-       createApples();
-     } else if (orangeL == 2) {
-       createOrange();
-     }else {
-       createRed();
-     }
-   }
-
-
-
 }
 
 function createApples() {
